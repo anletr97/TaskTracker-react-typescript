@@ -1,19 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { CardContent } from './card-content';
+import { CardEmpty } from './card-empty';
+import { CardHeader } from './card-header';
 import './style.css';
 
 type CardProps = {
-    hasHeader: boolean;
+    hasHeader: boolean
 }
 
-export class Card extends Component<CardProps, {}> {
-    public static defaultProps = {
-        hasHeader: false,
-    }
+export class Card extends React.Component<CardProps> {
 
+    getCardTemplate() {
+        if (!this.props.hasHeader) {
+            return <CardEmpty />
+        } else {
+            return (
+                <div className="card-container">
+                    <CardHeader />
+                    <CardContent />
+                </div>
+            );
+        }
+    }
+    /** Main render */
     render() {
-        return(
-            <div className="card-container">
-            </div>
+        return (
+            this.getCardTemplate()
         );
     }
 }

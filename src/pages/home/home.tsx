@@ -4,7 +4,7 @@ function Home() {
     const Card = SharedComponent.Card;
     return (
         <div className="container" style={{width: 400}}>
-            <Card hasHeader={false}/>
+            <Card hasHeader />
         </div>
     );
 }

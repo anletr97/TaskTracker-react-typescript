@@ -1,3 +1,9 @@
+interface CardHeaderProps {
+    text: string;
+    
+}
+
+
 export function CardHeader() {
     return(
         <div className="card-header">
