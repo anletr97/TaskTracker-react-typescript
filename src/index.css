@@ -10,18 +10,48 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.primary {
+  background: #28b5b5 !important;
+}
+
+.danger {
+  background: #d5988f !important;
+}
+
+.success {
+  background: #8fd9a8 !important;
+}
+
 .btn {
+  background: #4a503d;
   display: inline-block;
-  background: #000;
   color: #fff;
   border: none;
-  border-radius:5px;
+  border-radius: 15px;
   padding: 6px 12px;
   margin: 5px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   font-family: inherit;
   cursor: pointer;
+}
+
+.input-text {
+  display: inline-block;
+  background: #d5988f;
+  color: #faf2da;
+  border: none;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 6px;
+  margin: 5px;
+  font-family: inherit;
+}
+
+.input-text:focus {
+  color: #4a503d;
+  background-color: #faf2da;
+  outline: none;
 }
 
 .btn:hover {
@@ -30,4 +60,32 @@ body {
 
 .btn:active {
   transform: scale(0.98);
+}
+
+.card-container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  background: #8e9775;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
 }
