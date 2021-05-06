@@ -1,12 +1,8 @@
 // Add onClick props later
-const Button = ({ color, text }) => {
+export const Button = ({ color, text }) => {
     return (
-        <button
-            style={{ backgroundColor: color }}
-            className="btn">
-                {text}
+        <button className="btn">
+            {text}
         </button>
     );
 }
-
-export default Button;

@@ -1,10 +1,9 @@
-import * as SharedComponent from '../../shared-components/index'
+import TodosControl from '../../components/todos'
 
 function Home() {
-    const Card = SharedComponent.Card;
     return (
         <div className="container" style={{width: 400}}>
-            <Card hasHeader />
+            <TodosControl />
         </div>
     );
 }

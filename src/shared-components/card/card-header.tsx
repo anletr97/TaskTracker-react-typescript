@@ -1,13 +1,15 @@
-interface CardHeaderProps {
-    text: string;
-    
+import React from "react";
+
+type CardHeaderProps = {
+    text: string,
 }
 
-
-export function CardHeader() {
-    return(
-        <div className="card-header">
-            <h3>Card header</h3>
-        </div>
-    );
+export class CardHeader extends React.Component<CardHeaderProps> {
+    render() {
+        return(
+            <div className="card-header">
+                <h3>{this.props.text}</h3>
+            </div>
+        );
+    }
 }
