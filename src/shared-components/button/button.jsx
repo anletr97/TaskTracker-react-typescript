@@ -1,7 +1,7 @@
 // Add onClick props later
 export const Button = ({ color, text }) => {
     return (
-        <button className="btn">
+        <button  className={`btn ${color}`}>
             {text}
         </button>
     );

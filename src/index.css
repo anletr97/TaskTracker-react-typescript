@@ -10,12 +10,24 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.primary {
+  background: #28b5b5 !important;
+}
+
+.danger {
+  background: #d5988f !important;
+}
+
+.success {
+  background: #8fd9a8 !important;
+}
+
 .btn {
-  display: inline-block;
   background: #4a503d;
+  display: inline-block;
   color: #fff;
   border: none;
-  border-radius:15px;
+  border-radius: 15px;
   padding: 6px 12px;
   margin: 5px;
   text-decoration: none;
@@ -36,9 +48,9 @@ body {
   font-family: inherit;
 }
 
-.input-text:focus{
+.input-text:focus {
   color: #4a503d;
-  background-color: #faf2da; 
+  background-color: #faf2da;
   outline: none;
 }
 
@@ -72,4 +84,8 @@ body {
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
 }

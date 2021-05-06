@@ -1,9 +1,9 @@
-import TodosControl from '../../components/todos'
+import Todos from '../../todos/todos'
 
 function Home() {
     return (
-        <div className="container" style={{width: 400}}>
-            <TodosControl />
+        <div className="container" style={{width: 800}}>
+            <Todos />
         </div>
     );
 }
